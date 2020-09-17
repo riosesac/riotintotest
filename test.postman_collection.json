@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "15fbdd49-d960-4812-ae6c-85bc4e21e9d9",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "member create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "nama",
+							"value": "VVIP",
+							"type": "text"
+						},
+						{
+							"key": "harga",
+							"value": "2.000.000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/api/user/member/create",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"member",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "member show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}/api/user/member",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"member"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "regi8ster",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "namaDepan",
+							"value": "riotinto",
+							"type": "text"
+						},
+						{
+							"key": "namaBelakang",
+							"value": "arjuna",
+							"type": "text"
+						},
+						{
+							"key": "ttl",
+							"value": "bone 29 juni 1991",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "pria",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "arjunariotinto@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "qwerty",
+							"type": "text"
+						},
+						{
+							"key": "password_current",
+							"value": "qwwerty",
+							"type": "text"
+						},
+						{
+							"key": "member",
+							"value": "vvip",
+							"type": "text"
+						},
+						{
+							"key": "number",
+							"value": "0987654321",
+							"type": "text"
+						},
+						{
+							"key": "expired",
+							"value": "29-06-2029",
+							"type": "text"
+						},
+						{
+							"key": "tipe",
+							"value": "visa",
+							"type": "text"
+						},
+						{
+							"key": "alamat",
+							"value": "depok",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{local}}/api/user/register/create",
+					"host": [
+						"{{local}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"register",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
